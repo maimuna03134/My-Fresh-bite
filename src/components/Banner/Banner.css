@@ -1,0 +1,85 @@
+
+
+@keyframes bannerAnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.animate-bannerAnimation {
+  animation: bannerAnimation 3s ease-in-out 1;
+}
+
+/* @keyframes textPing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-textPing {
+  animation: textPing 1.5s ease-in-out 1;
+} */
+
+
+
+@keyframes textPing {
+  0% {
+    transform: scale(0.8);
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  60% {
+     transform: scale(1.05);
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-textPing {
+  animation: textPing 5s ease-out infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 70ch; 
+  }
+}
+
+/* Blinking cursor */
+@keyframes blinkCaret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff; 
+  }
+}
+
+
+.typing-text {
+  /* display: inline-block; */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff; 
+  animation: typing 5s steps(40) 1 forwards, blinkCaret 1.5s step-end infinite;
+}

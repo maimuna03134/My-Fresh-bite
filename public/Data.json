@@ -1,0 +1,317 @@
+[
+  {
+    "_id": "1",
+    "name": "Greek Salad",
+    "image": "https://i.ibb.co.com/0y84qyht/food-1.png",
+    "price": 300,
+    "description": "Fresh Greek style salad with veggies and cheese.",
+    "category": "Salad",
+    "rating": 4.2
+  },
+  {
+    "_id": "2",
+    "name": "Veg Salad",
+    "image": "https://i.ibb.co.com/1h8QM0T/food-2.png",
+    "price": 230,
+    "description": "Healthy mix of seasonal vegetables.",
+    "category": "Salad",
+    "rating": 3.5
+  },
+  {
+    "_id": "3",
+    "name": "Clover Salad",
+    "image": "https://i.ibb.co.com/wFhpj6nC/food-3.png",
+    "price": 260,
+    "description": "Clover leaves and veggies tossed with light dressing.",
+    "category": "Salad",
+    "rating": 4.8
+  },
+  {
+    "_id": "4",
+    "name": "Chicken Salad",
+    "image": "https://i.ibb.co.com/GQJVvRFK/food-4.png",
+    "price": 330,
+    "description": "Chicken mixed with fresh greens and creamy sauce.",
+    "category": "Salad",
+    "rating": 4.3
+  },
+  {
+    "_id": "5",
+    "name": "Lasagna Rolls",
+    "image": "https://i.ibb.co.com/FkXv5Wmk/food-5.png",
+    "price": 260,
+    "description": "Cheesy lasagna rolls baked to perfection.",
+    "category": "Rolls",
+    "rating": 4.1
+  },
+  {
+    "_id": "6",
+    "name": "Peri Peri Rolls",
+    "image": "https://i.ibb.co.com/B2VJp2m6/food-6.png",
+    "price": 200,
+    "description": "Spicy peri peri chicken wrapped in soft rolls.",
+    "category": "Rolls",
+    "rating": 4.0
+  },
+  {
+    "_id": "7",
+    "name": "Chicken Rolls",
+    "image": "https://i.ibb.co/B048wZm/food-7.png",
+    "price": 240,
+    "description": "Juicy chicken rolled in soft bread wrap.",
+    "category": "Rolls",
+    "rating": 3.7
+  },
+  {
+    "_id": "8",
+    "name": "Veg Rolls",
+    "image": "https://i.ibb.co/rRzW17yP/food-8.png",
+    "price": 170,
+    "description": "Crispy rolls stuffed with seasonal vegetables.",
+    "category": "Rolls",
+    "rating": 4.2
+  },
+  {
+    "_id": "9",
+    "name": "Ripple Ice Cream",
+    "image": "https://i.ibb.co/LDyVScbs/food-9.png",
+    "price": 160,
+    "description": "Ripple flavored creamy ice cream.",
+    "category": "Deserts",
+    "rating": 4.9
+  },
+  {
+    "_id": "10",
+    "name": "Fruit Ice Cream",
+    "image": "https://i.ibb.co/1t3RDcJZ/food-10.png",
+    "price": 220,
+    "description": "Fresh fruit flavored ice cream.",
+    "category": "Deserts",
+    "rating": 4.4
+  },
+  {
+    "_id": "11",
+    "name": "Jar Ice Cream",
+    "image": "https://i.ibb.co/pHwPdwx/food-11.png",
+    "price": 100,
+    "description": "Delicious ice cream served in a jar.",
+    "category": "Deserts",
+    "rating": 4.1
+  },
+  {
+    "_id": "12",
+    "name": "Vanilla Ice Cream",
+    "image": "https://i.ibb.co/mxybr7n/food-12.png",
+    "price": 140,
+    "description": "Classic vanilla ice cream.",
+    "category": "Deserts",
+    "rating": 4.2
+  },
+  {
+    "_id": "13",
+    "name": "Chicken Sandwich",
+    "image": "https://i.ibb.co/PZWqyntp/food-13.png",
+    "price": 200,
+    "description": "Grilled chicken stuffed sandwich.",
+    "category": "Sandwich",
+    "rating": 4.3
+  },
+  {
+    "_id": "14",
+    "name": "Vegan Sandwich",
+    "image": "https://i.ibb.co/fdcjcYZW/food-14.png",
+    "price": 240,
+    "description": "Plant-based sandwich with healthy filling.",
+    "category": "Sandwich",
+    "rating": 4.8
+  },
+  {
+    "_id": "15",
+    "name": "Grilled Sandwich",
+    "image": "https://i.ibb.co/3YW5HMhn/food-15.png",
+    "price": 180,
+    "description": "Crispy grilled sandwich with cheese.",
+    "category": "Sandwich",
+    "rating": 4.2
+  },
+  {
+    "_id": "16",
+    "name": "Bread Sandwich",
+    "image": "https://i.ibb.co/JFFKPmcx/food-16.png",
+    "price": 280,
+    "description": "Simple and tasty bread sandwich.",
+    "category": "Sandwich",
+    "rating": 3.6
+  },
+  {
+    "_id": "17",
+    "name": "Cup Cake",
+    "image": "https://i.ibb.co/8LCvxk8G/food-17.png",
+    "price": 160,
+    "description": "Soft and fluffy cup cake.",
+    "category": "Cake",
+    "rating": 4.9
+  },
+  {
+    "_id": "18",
+    "name": "Vegan Cake",
+    "image": "https://i.ibb.co/tM4KLxVn/food-18.png",
+    "price": 200,
+    "description": "Eggless vegan cake with soft texture.",
+    "category": "Cake",
+    "rating": 4.3
+  },
+  {
+    "_id": "19",
+    "name": "Butterscotch Cake",
+    "image": "https://i.ibb.co/fYyZLHfj/food-19.png",
+    "price": 260,
+    "description": "Rich butterscotch flavored cake.",
+    "category": "Cake",
+    "rating": 4.8
+  },
+  {
+    "_id": "20",
+    "name": "Sliced Cake",
+    "image": "https://i.ibb.co/xKq4j5K2/food-20.png",
+    "price": 180,
+    "description": "Fresh sliced cake with cream topping.",
+    "category": "Cake",
+    "rating": 4.2
+  },
+  {
+    "_id": "21",
+    "name": "Garlic Mushroom",
+    "image": "https://i.ibb.co/7xCdWfYJ/food-21.png",
+    "price": 170,
+    "description": "Mushrooms fried with garlic seasoning.",
+    "category": "Pure Veg",
+    "rating": 4.2
+  },
+  {
+    "_id": "22",
+    "name": "Fried Cauliflower",
+    "image": "https://i.ibb.co/r2ST5Nfs/food-22.png",
+    "price": 210,
+    "description": "Crispy fried cauliflower snack.",
+    "category": "Pure Veg",
+    "rating": 4.3
+  },
+  {
+    "_id": "23",
+    "name": "Mix Veg Pulao",
+    "image": "https://i.ibb.co/N2TPnt3F/food-23.png",
+    "price": 130,
+    "description": "Rice cooked with mixed vegetables.",
+    "category": "Pure Veg",
+    "rating": 4.0
+  },
+  {
+    "_id": "24",
+    "name": "Rice Zucchini",
+    "image": "https://i.ibb.co/HTf6b2fv/food-24.png",
+    "price": 180,
+    "description": "Rice cooked with zucchini and spices.",
+    "category": "Pure Veg",
+    "rating": 3.7
+  },
+  {
+    "_id": "25",
+    "name": "Cheese Pasta",
+    "image": "https://i.ibb.co/xSy14LdC/food-25.png",
+    "price": 200,
+    "description": "Creamy cheese pasta for cheese lovers.",
+    "category": "Pasta",
+    "rating": 4.2
+  },
+  {
+    "_id": "26",
+    "name": "Tomato Pasta",
+    "image": "https://i.ibb.co/S7x4Jf2G/food-26.png",
+    "price": 240,
+    "description": "Tomato flavored pasta cooked with herbs.",
+    "category": "Pasta",
+    "rating": 4.3
+  },
+  {
+    "_id": "27",
+    "name": "Creamy Pasta",
+    "image": "https://i.ibb.co/wrCwhcg4/food-27.png",
+    "price": 220,
+    "description": "Delicious pasta with creamy white sauce.",
+    "category": "Pasta",
+    "rating": 4.1
+  },
+  {
+    "_id": "28",
+    "name": "Chicken Pasta",
+    "image": "https://i.ibb.co/wNRbS994/food-28.png",
+    "price": 280,
+    "description": "Pasta mixed with grilled chicken pieces.",
+    "category": "Pasta",
+    "rating": 4.9
+  },
+  {
+    "_id": "29",
+    "name": "Butter Noodles",
+    "image": "https://i.ibb.co/r2jvKpNG/food-29.png",
+    "price": 180,
+    "description": "Noodles tossed in butter and spices.",
+    "category": "Noodles",
+    "rating": 4.2
+  },
+  {
+    "_id": "30",
+    "name": "Veg Noodles",
+    "image": "https://i.ibb.co/My1nRLmK/food-30.png",
+    "price": 160,
+    "description": "Vegetable flavored stir fried noodles.",
+    "category": "Noodles",
+    "rating": 4.0
+  },
+  {
+    "_id": "31",
+    "name": "Somen Noodles",
+    "image": "https://i.ibb.co/9HxBmPsW/food-31.png",
+    "price": 240,
+    "description": "Japanese style thin noodles.",
+    "category": "Noodles",
+    "rating": 4.8
+  },
+  {
+    "_id": "32",
+    "name": "Cooked Noodles",
+    "image": "https://i.ibb.co/KzVz6JCH/food-32.png",
+    "price": 190,
+    "description": "Hot cooked noodles served with sauce.",
+    "category": "Noodles",
+    "rating": 4.1
+  },
+  {
+    "_id": "33",
+    "name": "Beef Burger",
+    "image": "https://i.ibb.co/LFrV8FL/burger2.webp",
+    "price": 330,
+    "description": "Juicy beef patty burger with cheese and veggies.",
+    "category": "Burger",
+    "rating": 4.9
+  },
+  {
+    "_id": "34",
+    "name": "Oreo Ice Cream",
+    "image": "https://i.ibb.co/VYCPs0Yx/OIP.webp",
+    "price": 280,
+    "description": "Vanilla ice cream on a fudgy brownie, topped with Oreo crumble and chocolate drizzle",
+    "category": "Desserts",
+    "rating": 4.8
+  },
+  {
+    "_id": "35",
+    "name": "Pepperoni pasta bake",
+    "image": "https://i.ibb.co/CKRhtg7N/dreamstime-m.jpg",
+    "price": 250,
+    "description": "Cheesy baked pasta layered with pepperoni and rich tomato sauce.",
+    "category": "Pasta",
+    "rating": 4.9
+  }
+]
