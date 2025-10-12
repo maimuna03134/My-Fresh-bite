@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+
 import Container from "../Container/Container";
-import wbLogo from "../../assets/Logo.png";
+import wbLogo from "../../assets/food_api_logo.png";
 import { Link, NavLink } from "react-router";
 import { FaCartPlus } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 
-import { loadCartItems } from "../../utility/localStorage";
-import CartDropdown from "../../pages/CartDropdown/CartDropdown";
 
 const menuItems = [
   { id: "home", label: "Home", path: "/" },
@@ -15,21 +13,7 @@ const menuItems = [
 ];
 
 const Navbar = () => {
-  const [showCart, setShowCart] = useState(false);
-  const [cartCount, setCartCount] = useState(0);
-
-  const updateCartCount = () => {
-    const items = loadCartItems();
-    const total = items.reduce((sum, i) => sum + i.quantity, 0);
-    setCartCount(total);
-  };
-
-  useEffect(() => {
-    updateCartCount(); // initial load
-    window.addEventListener("cartUpdated", updateCartCount);
-
-    return () => window.removeEventListener("cartUpdated", updateCartCount);
-  }, []);
+  
 
   return (
     <div className="bg-gradient-to-br from-rose-100 to-amber-200 shadow-lg">
@@ -98,32 +82,25 @@ const Navbar = () => {
           </div>
 
           {/* Right Side: Search, Cart, Sign In */}
-          <div className="navbar-end cursor-pointer flex items-center space-x-3 relative">
+          <div className="navbar-end cursor-pointer flex items-center space-x-3 ">
             <IoSearchOutline size={18} color="#ed6002" strokeWidth={1.25} />
 
-            <div className="relative">
-              <FaCartPlus
-                size={20}
-                color="#ed6002"
-                strokeWidth={1.25}
-                onClick={() => setShowCart(!showCart)}
-              />
+            <div>
+              
               {/* Always show cart count, even if 0 */}
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-                {cartCount}
-              </span>
-              {showCart && <CartDropdown />}
+              <Link to="/cart">
+               <FaCartPlus size={20} color="#ed6002" strokeWidth={1.25} />
+              </Link>
             </div>
 
-     
-              <button className="ml-3 btn btn-soft btn-warning rounded-full text-amber-800">
-                Sign In
-              </button>
-            
+            <button className="ml-3 btn btn-soft btn-warning rounded-full text-amber-800">
+              Sign In
+            </button>
           </div>
         </div>
       </Container>
     </div>
+    
   );
 };
 

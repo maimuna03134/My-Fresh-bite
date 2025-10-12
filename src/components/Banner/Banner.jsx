@@ -28,7 +28,7 @@ const Banner = () => {
               </span>
             </p>
             <Link to="/menu">
-              <button className="btn bg-amber-200 hover:bg-amber-700 hover:text-amber-100 text-amber-700 fon rounded-full">
+              <button className=" btn bg-amber-200 hover:bg-amber-700 hover:text-amber-100 text-amber-700 fon rounded-full">
                 View Menu{" "}
               </button>
             </Link>

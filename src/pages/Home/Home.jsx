@@ -58,7 +58,7 @@ if (!loading && items.length === 0) {
 
           <div className="mt-8 flex justify-center">
             <Link
-              className="btn btn-outline bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white font-bold"
+              className="btn btn-outline bg-gradient-to-br from-green-300 to-amber-700 text-white font-bold"
               to="/menu"
             >
               Show All Items

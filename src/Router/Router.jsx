@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 import App from "../App";
+import CartDropdown from "../pages/CartDropdown/CartDropdown";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "/menu",
         Component: Menu,
+      },
+      {
+        path: "/cart",
+        Component: CartDropdown,
       },
     ],
   },

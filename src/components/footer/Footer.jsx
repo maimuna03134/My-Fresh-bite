@@ -1,5 +1,5 @@
 import React from "react";
-import wbLogo from "../../assets/Logo.png";
+import wbLogo from "../../assets/food_api_logo.png";
 import {
   FaTwitter,
   FaLinkedinIn,
