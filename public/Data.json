@@ -4,314 +4,1019 @@
     "name": "Greek Salad",
     "image": "https://i.ibb.co.com/0y84qyht/food-1.png",
     "price": 300,
+    "discountPrice": 250,
     "description": "Fresh Greek style salad with veggies and cheese.",
+    "ingredients": [
+      "Lettuce",
+      "Tomatoes",
+      "Olives",
+      "Feta Cheese",
+      "Olive Oil"
+    ],
     "category": "Salad",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 480 }
+    ],
+    "reviews": [
+      { "user": "Rafi", "comment": "Super tasty and healthy!", "rating": 5 },
+      { "user": "Sadia", "comment": "Loved the freshness!", "rating": 4 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "15 mins",
+    "calories": 180,
+    "spiceLevel": "Mild",
+    "tags": ["Healthy", "Fresh", "Vegetarian"],
+    "isAvailable": true
   },
   {
     "_id": "2",
     "name": "Veg Salad",
     "image": "https://i.ibb.co.com/1h8QM0T/food-2.png",
     "price": 230,
+    "discountPrice": 200,
     "description": "Healthy mix of seasonal vegetables.",
+    "ingredients": [
+      "Cucumber",
+      "Lettuce",
+      "Bell Peppers",
+      "Carrots",
+      "Olive Oil"
+    ],
     "category": "Salad",
-    "rating": 3.5
+    "rating": 3.5,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 200 }
+    ],
+    "reviews": [
+      { "user": "Anika", "comment": "Fresh and light.", "rating": 4 },
+      { "user": "Tariq", "comment": "Good for diet.", "rating": 3 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "10 mins",
+    "calories": 150,
+    "spiceLevel": "Mild",
+    "tags": ["Fresh", "Low Calorie", "Vegetarian"],
+    "isAvailable": true
   },
   {
     "_id": "3",
     "name": "Clover Salad",
     "image": "https://i.ibb.co.com/wFhpj6nC/food-3.png",
     "price": 260,
+    "discountPrice": 220,
     "description": "Clover leaves and veggies tossed with light dressing.",
+    "ingredients": [
+      "Clover Leaves",
+      "Spinach",
+      "Cherry Tomatoes",
+      "Feta Cheese",
+      "Lemon Dressing"
+    ],
     "category": "Salad",
-    "rating": 4.8
+    "rating": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 350 }
+    ],
+    "reviews": [
+      { "user": "Rina", "comment": "Crispy and flavorful!", "rating": 5 },
+      { "user": "Mohan", "comment": "Perfectly balanced.", "rating": 5 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "15 mins",
+    "calories": 160,
+    "spiceLevel": "Mild",
+    "tags": ["Fresh", "Healthy", "Vegetarian"],
+    "isAvailable": true
   },
   {
     "_id": "4",
     "name": "Chicken Salad",
     "image": "https://i.ibb.co.com/GQJVvRFK/food-4.png",
     "price": 330,
+    "discountPrice": 300,
     "description": "Chicken mixed with fresh greens and creamy sauce.",
+    "ingredients": [
+      "Chicken Breast",
+      "Lettuce",
+      "Cherry Tomatoes",
+      "Cucumber",
+      "Creamy Dressing"
+    ],
     "category": "Salad",
-    "rating": 4.3
+    "rating": 4.3,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Sahil", "comment": "Juicy chicken, loved it.", "rating": 5 },
+      { "user": "Nabila", "comment": "Nice salad combo.", "rating": 4 }
+    ],
+    "deliveryTime": "25–30 mins",
+    "preparationTime": "20 mins",
+    "calories": 220,
+    "spiceLevel": "Medium",
+    "tags": ["Protein Rich", "Fresh", "Healthy"],
+    "isAvailable": true
   },
   {
     "_id": "5",
     "name": "Lasagna Rolls",
     "image": "https://i.ibb.co.com/FkXv5Wmk/food-5.png",
     "price": 260,
+    "discountPrice": 230,
     "description": "Cheesy lasagna rolls baked to perfection.",
+    "ingredients": [
+      "Lasagna Sheets",
+      "Cheese",
+      "Tomato Sauce",
+      "Basil",
+      "Olive Oil"
+    ],
     "category": "Rolls",
-    "rating": 4.1
+    "rating": 4.1,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 280 }
+    ],
+    "reviews": [
+      { "user": "Arif", "comment": "Cheesy goodness!", "rating": 5 },
+      { "user": "Lina", "comment": "Perfect for lunch.", "rating": 4 }
+    ],
+    "deliveryTime": "25–30 mins",
+    "preparationTime": "20 mins",
+    "calories": 320,
+    "spiceLevel": "Mild",
+    "tags": ["Cheesy", "Baked", "Comfort Food"],
+    "isAvailable": true
   },
   {
     "_id": "6",
     "name": "Peri Peri Rolls",
     "image": "https://i.ibb.co.com/B2VJp2m6/food-6.png",
     "price": 200,
+    "discountPrice": 180,
     "description": "Spicy peri peri chicken wrapped in soft rolls.",
+    "ingredients": [
+      "Chicken",
+      "Peri Peri Sauce",
+      "Lettuce",
+      "Cheese",
+      "Soft Roll"
+    ],
     "category": "Rolls",
-    "rating": 4.0
+    "rating": 4.0,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 140 },
+      { "name": "5 star", "count": 220 }
+    ],
+    "reviews": [
+      { "user": "Rahim", "comment": "Nice kick of spice!", "rating": 4 },
+      { "user": "Nina", "comment": "Loved the flavor.", "rating": 4 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "15 mins",
+    "calories": 300,
+    "spiceLevel": "Hot",
+    "tags": ["Spicy", "Chicken", "Rolls"],
+    "isAvailable": true
   },
   {
     "_id": "7",
     "name": "Chicken Rolls",
     "image": "https://i.ibb.co/B048wZm/food-7.png",
     "price": 240,
+    "discountPrice": 210,
     "description": "Juicy chicken rolled in soft bread wrap.",
+    "ingredients": ["Chicken", "Lettuce", "Tomatoes", "Cheese", "Soft Roll"],
     "category": "Rolls",
-    "rating": 3.7
+    "rating": 3.7,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 180 }
+    ],
+    "reviews": [
+      { "user": "Ritu", "comment": "Good but a bit dry.", "rating": 3 },
+      { "user": "Aman", "comment": "Tasty chicken.", "rating": 4 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "15 mins",
+    "calories": 310,
+    "spiceLevel": "Medium",
+    "tags": ["Chicken", "Soft Roll", "Lunch"],
+    "isAvailable": true
   },
   {
     "_id": "8",
     "name": "Veg Rolls",
     "image": "https://i.ibb.co/rRzW17yP/food-8.png",
     "price": 170,
+    "discountPrice": 150,
     "description": "Crispy rolls stuffed with seasonal vegetables.",
+    "ingredients": ["Cabbage", "Carrots", "Capsicum", "Cheese", "Soft Roll"],
     "category": "Rolls",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 250 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Crispy and tasty!", "rating": 5 },
+      { "user": "Imran", "comment": "Good vegetable mix.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "12 mins",
+    "calories": 200,
+    "spiceLevel": "Mild",
+    "tags": ["Vegetarian", "Crispy", "Snack"],
+    "isAvailable": true
   },
   {
     "_id": "9",
     "name": "Ripple Ice Cream",
     "image": "https://i.ibb.co/LDyVScbs/food-9.png",
     "price": 160,
+    "discountPrice": 140,
     "description": "Ripple flavored creamy ice cream.",
+    "ingredients": ["Milk", "Cream", "Sugar", "Ripple Flavor", "Chocolate Chips"],
     "category": "Deserts",
-    "rating": 4.9
+    "rating": 4.9,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Nadia", "comment": "Creamy and delicious!", "rating": 5 },
+      { "user": "Farhan", "comment": "Perfect dessert.", "rating": 5 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "5 mins",
+    "calories": 250,
+    "spiceLevel": "None",
+    "tags": ["Cold", "Sweet", "Dessert"],
+    "isAvailable": true
   },
   {
     "_id": "10",
     "name": "Fruit Ice Cream",
     "image": "https://i.ibb.co/1t3RDcJZ/food-10.png",
     "price": 220,
+    "discountPrice": 200,
     "description": "Fresh fruit flavored ice cream.",
+    "ingredients": ["Milk", "Cream", "Sugar", "Mixed Fruits"],
     "category": "Deserts",
-    "rating": 4.4
+    "rating": 4.4,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 220 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Very fruity and refreshing.", "rating": 5 },
+      { "user": "Rafiq", "comment": "Loved the taste.", "rating": 4 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "5 mins",
+    "calories": 230,
+    "spiceLevel": "None",
+    "tags": ["Fruity", "Cold", "Dessert"],
+    "isAvailable": true
   },
   {
     "_id": "11",
     "name": "Jar Ice Cream",
     "image": "https://i.ibb.co/pHwPdwx/food-11.png",
     "price": 100,
+    "discountPrice": 90,
     "description": "Delicious ice cream served in a jar.",
+    "ingredients": ["Milk", "Sugar", "Cream", "Chocolate Chips", "Nuts"],
     "category": "Deserts",
-    "rating": 4.1
+    "rating": 4.1,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 70 },
+      { "name": "5 star", "count": 180 }
+    ],
+    "reviews": [
+      { "user": "Alif", "comment": "Cute jar serving!", "rating": 4 },
+      { "user": "Lara", "comment": "Yummy and sweet.", "rating": 4 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "5 mins",
+    "calories": 200,
+    "spiceLevel": "None",
+    "tags": ["Cold", "Sweet", "Dessert"],
+    "isAvailable": true
   },
   {
     "_id": "12",
     "name": "Vanilla Ice Cream",
     "image": "https://i.ibb.co/mxybr7n/food-12.png",
     "price": 140,
+    "discountPrice": 120,
     "description": "Classic vanilla ice cream.",
+    "ingredients": ["Milk", "Cream", "Sugar", "Vanilla Extract"],
     "category": "Deserts",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 180 }
+    ],
+    "reviews": [
+      { "user": "Sofia", "comment": "Classic and creamy.", "rating": 5 },
+      { "user": "Imran", "comment": "Loved the vanilla flavor.", "rating": 4 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "5 mins",
+    "calories": 210,
+    "spiceLevel": "None",
+    "tags": ["Classic", "Cold", "Dessert"],
+    "isAvailable": true
   },
   {
     "_id": "13",
     "name": "Chicken Sandwich",
     "image": "https://i.ibb.co/PZWqyntp/food-13.png",
     "price": 200,
+    "discountPrice": 180,
     "description": "Grilled chicken stuffed sandwich.",
+    "ingredients": ["Grilled Chicken", "Lettuce", "Cheese", "Tomatoes", "Bread"],
     "category": "Sandwich",
-    "rating": 4.3
+    "rating": 4.3,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 200 }
+    ],
+    "reviews": [
+      { "user": "Zara", "comment": "Juicy and fresh.", "rating": 5 },
+      { "user": "Ayaan", "comment": "Good portion.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "10 mins",
+    "calories": 280,
+    "spiceLevel": "Mild",
+    "tags": ["Protein", "Lunch", "Grilled"],
+    "isAvailable": true
   },
   {
     "_id": "14",
     "name": "Vegan Sandwich",
     "image": "https://i.ibb.co/fdcjcYZW/food-14.png",
     "price": 240,
+    "discountPrice": 220,
     "description": "Plant-based sandwich with healthy filling.",
+    "ingredients": ["Tofu", "Lettuce", "Tomatoes", "Cucumber", "Whole Grain Bread"],
     "category": "Sandwich",
-    "rating": 4.8
+    "rating": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 280 }
+    ],
+    "reviews": [
+      { "user": "Mina", "comment": "Healthy and tasty!", "rating": 5 },
+      { "user": "Zahid", "comment": "Perfect vegan option.", "rating": 5 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "10 mins",
+    "calories": 250,
+    "spiceLevel": "Mild",
+    "tags": ["Vegan", "Healthy", "Lunch"],
+    "isAvailable": true
   },
   {
     "_id": "15",
     "name": "Grilled Sandwich",
     "image": "https://i.ibb.co/3YW5HMhn/food-15.png",
     "price": 180,
+    "discountPrice": 160,
     "description": "Crispy grilled sandwich with cheese.",
+    "ingredients": ["Bread", "Cheese", "Butter", "Tomatoes", "Lettuce"],
     "category": "Sandwich",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 180 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Crispy and cheesy!", "rating": 5 },
+      { "user": "Omar", "comment": "Good snack for lunch.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "10 mins",
+    "calories": 220,
+    "spiceLevel": "Mild",
+    "tags": ["Cheesy", "Grilled", "Snack"],
+    "isAvailable": true
   },
   {
     "_id": "16",
     "name": "Bread Sandwich",
     "image": "https://i.ibb.co/JFFKPmcx/food-16.png",
     "price": 280,
+    "discountPrice": 260,
     "description": "Simple and tasty bread sandwich.",
+    "ingredients": ["Bread", "Egg", "Cheese", "Lettuce", "Tomatoes"],
     "category": "Sandwich",
-    "rating": 3.6
+    "rating": 3.6,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 90 }
+    ],
+    "reviews": [
+      { "user": "Ali", "comment": "Simple and tasty.", "rating": 4 },
+      { "user": "Nina", "comment": "Could use more veggies.", "rating": 3 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "8 mins",
+    "calories": 230,
+    "spiceLevel": "Mild",
+    "tags": ["Simple", "Quick", "Snack"],
+    "isAvailable": true
   },
   {
     "_id": "17",
     "name": "Cup Cake",
     "image": "https://i.ibb.co/8LCvxk8G/food-17.png",
     "price": 160,
+    "discountPrice": 140,
     "description": "Soft and fluffy cup cake.",
+    "ingredients": ["Flour", "Sugar", "Butter", "Eggs", "Vanilla"],
     "category": "Cake",
-    "rating": 4.9
+    "rating": 4.9,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Super soft and tasty!", "rating": 5 },
+      { "user": "Rafi", "comment": "Best cupcake I’ve had.", "rating": 5 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "15 mins",
+    "calories": 350,
+    "spiceLevel": "None",
+    "tags": ["Sweet", "Dessert", "Fluffy"],
+    "isAvailable": true
   },
   {
     "_id": "18",
     "name": "Vegan Cake",
     "image": "https://i.ibb.co/tM4KLxVn/food-18.png",
     "price": 200,
+    "discountPrice": 180,
     "description": "Eggless vegan cake with soft texture.",
+    "ingredients": ["Flour", "Sugar", "Coconut Milk", "Vegan Butter", "Cocoa"],
     "category": "Cake",
-    "rating": 4.3
+    "rating": 4.3,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 150 }
+    ],
+    "reviews": [
+      { "user": "Mina", "comment": "Healthy and delicious.", "rating": 5 },
+      { "user": "Zahid", "comment": "Soft texture, loved it.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "20 mins",
+    "calories": 320,
+    "spiceLevel": "None",
+    "tags": ["Vegan", "Dessert", "Soft"],
+    "isAvailable": true
   },
   {
     "_id": "19",
     "name": "Butterscotch Cake",
     "image": "https://i.ibb.co/fYyZLHfj/food-19.png",
     "price": 260,
+    "discountPrice": 240,
     "description": "Rich butterscotch flavored cake.",
+    "ingredients": ["Flour", "Sugar", "Butter", "Eggs", "Butterscotch"],
     "category": "Cake",
-    "rating": 4.8
+    "rating": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 280 }
+    ],
+    "reviews": [
+      { "user": "Sofia", "comment": "Butterscotch flavor is amazing!", "rating": 5 },
+      { "user": "Ali", "comment": "Rich and soft cake.", "rating": 5 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "20 mins",
+    "calories": 400,
+    "spiceLevel": "None",
+    "tags": ["Dessert", "Rich", "Sweet"],
+    "isAvailable": true
   },
   {
     "_id": "20",
     "name": "Sliced Cake",
     "image": "https://i.ibb.co/xKq4j5K2/food-20.png",
     "price": 180,
+    "discountPrice": 160,
     "description": "Fresh sliced cake with cream topping.",
+    "ingredients": ["Flour", "Sugar", "Cream", "Eggs", "Vanilla"],
     "category": "Cake",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 120 }
+    ],
+    "reviews": [
+      { "user": "Rafi", "comment": "Soft and creamy.", "rating": 4 },
+      { "user": "Tina", "comment": "Good portion size.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 300,
+    "spiceLevel": "None",
+    "tags": ["Dessert", "Creamy", "Sliced"],
+    "isAvailable": true
   },
   {
     "_id": "21",
     "name": "Garlic Mushroom",
     "image": "https://i.ibb.co/7xCdWfYJ/food-21.png",
     "price": 170,
+    "discountPrice": 150,
     "description": "Mushrooms fried with garlic seasoning.",
+    "ingredients": ["Mushrooms", "Garlic", "Olive Oil", "Salt", "Pepper"],
     "category": "Pure Veg",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 150 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Loved the garlic flavor.", "rating": 5 },
+      { "user": "Imran", "comment": "Perfect side dish.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "12 mins",
+    "calories": 180,
+    "spiceLevel": "Mild",
+    "tags": ["Veg", "Garlic", "Snack"],
+    "isAvailable": true
   },
   {
     "_id": "22",
     "name": "Fried Cauliflower",
     "image": "https://i.ibb.co/r2ST5Nfs/food-22.png",
     "price": 210,
+    "discountPrice": 190,
     "description": "Crispy fried cauliflower snack.",
+    "ingredients": ["Cauliflower", "Flour", "Spices", "Oil"],
     "category": "Pure Veg",
-    "rating": 4.3
+    "rating": 4.3,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 160 }
+    ],
+    "reviews": [
+      { "user": "Nina", "comment": "Crispy and tasty!", "rating": 5 },
+      { "user": "Ali", "comment": "Perfect snack.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 200,
+    "spiceLevel": "Mild",
+    "tags": ["Veg", "Crispy", "Snack"],
+    "isAvailable": true
   },
   {
     "_id": "23",
     "name": "Mix Veg Pulao",
     "image": "https://i.ibb.co/N2TPnt3F/food-23.png",
     "price": 130,
+    "discountPrice": 120,
     "description": "Rice cooked with mixed vegetables.",
+    "ingredients": ["Rice", "Carrots", "Peas", "Beans", "Spices"],
     "category": "Pure Veg",
-    "rating": 4.0
+    "rating": 4.0,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 120 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Light and flavorful.", "rating": 4 },
+      { "user": "Rafi", "comment": "Perfect for lunch.", "rating": 4 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "20 mins",
+    "calories": 250,
+    "spiceLevel": "Mild",
+    "tags": ["Veg", "Rice", "Healthy"],
+    "isAvailable": true
   },
   {
     "_id": "24",
     "name": "Rice Zucchini",
     "image": "https://i.ibb.co/HTf6b2fv/food-24.png",
     "price": 180,
+    "discountPrice": 160,
     "description": "Rice cooked with zucchini and spices.",
+    "ingredients": ["Rice", "Zucchini", "Olive Oil", "Spices", "Herbs"],
     "category": "Pure Veg",
-    "rating": 3.7
+    "rating": 3.7,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 70 }
+    ],
+    "reviews": [
+      { "user": "Ali", "comment": "Nice light meal.", "rating": 4 },
+      { "user": "Nina", "comment": "Could use more seasoning.", "rating": 3 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "20 mins",
+    "calories": 230,
+    "spiceLevel": "Mild",
+    "tags": ["Veg", "Rice", "Healthy"],
+    "isAvailable": true
   },
   {
     "_id": "25",
     "name": "Cheese Pasta",
     "image": "https://i.ibb.co/xSy14LdC/food-25.png",
     "price": 200,
+    "discountPrice": 180,
     "description": "Creamy cheese pasta for cheese lovers.",
+    "ingredients": ["Pasta", "Cheese", "Cream", "Butter", "Herbs"],
     "category": "Pasta",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 120 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Cheesy and perfect.", "rating": 5 },
+      { "user": "Omar", "comment": "Nice creamy texture.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 320,
+    "spiceLevel": "Mild",
+    "tags": ["Cheese", "Pasta", "Creamy"],
+    "isAvailable": true
   },
   {
     "_id": "26",
     "name": "Tomato Pasta",
     "image": "https://i.ibb.co/S7x4Jf2G/food-26.png",
     "price": 240,
+    "discountPrice": 220,
     "description": "Tomato flavored pasta cooked with herbs.",
+    "ingredients": ["Pasta", "Tomatoes", "Olive Oil", "Herbs", "Garlic"],
     "category": "Pasta",
-    "rating": 4.3
+    "rating": 4.3,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 160 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Fresh tomato taste.", "rating": 5 },
+      { "user": "Imran", "comment": "Loved the herbs.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 310,
+    "spiceLevel": "Mild",
+    "tags": ["Tomato", "Pasta", "Healthy"],
+    "isAvailable": true
   },
   {
     "_id": "27",
     "name": "Creamy Pasta",
     "image": "https://i.ibb.co/wrCwhcg4/food-27.png",
     "price": 220,
+    "discountPrice": 200,
     "description": "Delicious pasta with creamy white sauce.",
+    "ingredients": ["Pasta", "Cream", "Cheese", "Butter", "Garlic"],
     "category": "Pasta",
-    "rating": 4.1
+    "rating": 4.1,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 140 }
+    ],
+    "reviews": [
+      { "user": "Ali", "comment": "Creamy and tasty.", "rating": 5 },
+      { "user": "Nina", "comment": "Good portion.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 330,
+    "spiceLevel": "Mild",
+    "tags": ["Creamy", "Pasta", "Cheese"],
+    "isAvailable": true
   },
   {
     "_id": "28",
     "name": "Chicken Pasta",
     "image": "https://i.ibb.co/wNRbS994/food-28.png",
     "price": 280,
+    "discountPrice": 260,
     "description": "Pasta mixed with grilled chicken pieces.",
+    "ingredients": ["Pasta", "Chicken", "Cream", "Cheese", "Spices"],
     "category": "Pasta",
-    "rating": 4.9
+    "rating": 4.9,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Best chicken pasta ever!", "rating": 5 },
+      { "user": "Rafi", "comment": "Super tasty.", "rating": 5 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "20 mins",
+    "calories": 400,
+    "spiceLevel": "Mild",
+    "tags": ["Chicken", "Pasta", "Creamy"],
+    "isAvailable": true
   },
   {
     "_id": "29",
     "name": "Butter Noodles",
     "image": "https://i.ibb.co/r2jvKpNG/food-29.png",
     "price": 180,
+    "discountPrice": 160,
     "description": "Noodles tossed in butter and spices.",
+    "ingredients": ["Noodles", "Butter", "Garlic", "Salt", "Pepper"],
     "category": "Noodles",
-    "rating": 4.2
+    "rating": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 120 }
+    ],
+    "reviews": [
+      { "user": "Omar", "comment": "Simple and buttery.", "rating": 4 },
+      { "user": "Nina", "comment": "Loved it.", "rating": 5 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "12 mins",
+    "calories": 300,
+    "spiceLevel": "Mild",
+    "tags": ["Butter", "Noodles", "Simple"],
+    "isAvailable": true
   },
   {
     "_id": "30",
     "name": "Veg Noodles",
     "image": "https://i.ibb.co/My1nRLmK/food-30.png",
     "price": 160,
+    "discountPrice": 140,
     "description": "Vegetable flavored stir fried noodles.",
+    "ingredients": ["Noodles", "Carrots", "Beans", "Cabbage", "Soy Sauce"],
     "category": "Noodles",
-    "rating": 4.0
+    "rating": 4.0,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 90 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Healthy noodles.", "rating": 4 },
+      { "user": "Ali", "comment": "Good for quick meal.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "12 mins",
+    "calories": 280,
+    "spiceLevel": "Mild",
+    "tags": ["Veg", "Noodles", "Stir-fry"],
+    "isAvailable": true
   },
   {
     "_id": "31",
     "name": "Somen Noodles",
     "image": "https://i.ibb.co/9HxBmPsW/food-31.png",
     "price": 240,
+    "discountPrice": 220,
     "description": "Japanese style thin noodles.",
+    "ingredients": ["Somen Noodles", "Soy Sauce", "Sesame Oil", "Veggies", "Herbs"],
     "category": "Noodles",
-    "rating": 4.8
+    "rating": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 250 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Loved the Japanese flavor.", "rating": 5 },
+      { "user": "Rafi", "comment": "Perfect texture.", "rating": 5 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "15 mins",
+    "calories": 300,
+    "spiceLevel": "Mild",
+    "tags": ["Japanese", "Noodles", "Thin"],
+    "isAvailable": true
   },
   {
     "_id": "32",
     "name": "Cooked Noodles",
     "image": "https://i.ibb.co/KzVz6JCH/food-32.png",
     "price": 190,
+    "discountPrice": 170,
     "description": "Hot cooked noodles served with sauce.",
+    "ingredients": ["Noodles", "Sauce", "Garlic", "Veggies", "Oil"],
     "category": "Noodles",
-    "rating": 4.1
+    "rating": 4.1,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 100 }
+    ],
+    "reviews": [
+      { "user": "Nina", "comment": "Hot and tasty.", "rating": 4 },
+      { "user": "Imran", "comment": "Good sauce.", "rating": 4 }
+    ],
+    "deliveryTime": "15–20 mins",
+    "preparationTime": "12 mins",
+    "calories": 290,
+    "spiceLevel": "Mild",
+    "tags": ["Noodles", "Hot", "Sauce"],
+    "isAvailable": true
   },
   {
     "_id": "33",
     "name": "Beef Burger",
     "image": "https://i.ibb.co/LFrV8FL/burger2.webp",
     "price": 330,
+    "discountPrice": 300,
     "description": "Juicy beef patty burger with cheese and veggies.",
+    "ingredients": ["Beef Patty", "Bun", "Cheese", "Lettuce", "Tomatoes"],
     "category": "Burger",
-    "rating": 4.9
+    "rating": 4.9,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Sara", "comment": "Juicy and tasty burger!", "rating": 5 },
+      { "user": "Ali", "comment": "Perfect beef taste.", "rating": 5 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "15 mins",
+    "calories": 450,
+    "spiceLevel": "Medium",
+    "tags": ["Beef", "Burger", "Juicy"],
+    "isAvailable": true
   },
   {
     "_id": "34",
     "name": "Oreo Ice Cream",
     "image": "https://i.ibb.co/VYCPs0Yx/OIP.webp",
     "price": 280,
+    "discountPrice": 260,
     "description": "Vanilla ice cream on a fudgy brownie, topped with Oreo crumble and chocolate drizzle",
+    "ingredients": ["Vanilla Ice Cream", "Oreo Crumbles", "Brownie", "Chocolate Sauce", "Cream"],
     "category": "Desserts",
-    "rating": 4.8
+    "rating": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 250 }
+    ],
+    "reviews": [
+      { "user": "Tina", "comment": "Loved the Oreo crunch!", "rating": 5 },
+      { "user": "Rafi", "comment": "Delicious dessert.", "rating": 5 }
+    ],
+    "deliveryTime": "10–15 mins",
+    "preparationTime": "10 mins",
+    "calories": 400,
+    "spiceLevel": "None",
+    "tags": ["Ice Cream", "Oreo", "Sweet"],
+    "isAvailable": true
   },
   {
     "_id": "35",
-    "name": "Pepperoni pasta bake",
+    "name": "Pepperoni pasta bake",
     "image": "https://i.ibb.co/CKRhtg7N/dreamstime-m.jpg",
     "price": 250,
+    "discountPrice": 230,
     "description": "Cheesy baked pasta layered with pepperoni and rich tomato sauce.",
+    "ingredients": ["Pasta", "Pepperoni", "Cheese", "Tomato Sauce", "Herbs"],
     "category": "Pasta",
-    "rating": 4.9
+    "rating": 4.9,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 300 }
+    ],
+    "reviews": [
+      { "user": "Ali", "comment": "Best baked pasta!", "rating": 5 },
+      { "user": "Sara", "comment": "Cheesy and delicious.", "rating": 5 }
+    ],
+    "deliveryTime": "20–25 mins",
+    "preparationTime": "20 mins",
+    "calories": 420,
+    "spiceLevel": "Medium",
+    "tags": ["Pasta", "Cheese", "Pepperoni"],
+    "isAvailable": true
   }
 ]
+
+
+
+

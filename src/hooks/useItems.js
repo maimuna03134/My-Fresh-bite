@@ -1,20 +1,20 @@
-// import axios from "axios";
-// import { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-// const useApps = () => {
-//   const [items, setItems] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
+const useItems = () => {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-//   useEffect(() => {
-//     setLoading(true);
-//     axios("../Data.json")
-//       .then((data) => setItems(data.data))
-//       .catch((err) => setError(err))
-//       .finally(() => setLoading(false));
-//   }, []);
+  useEffect(() => {
+    setLoading(true);
+    axios("../Data.json")
+      .then((data) => setItems(data.data))
+      .catch((err) => setError(err))
+      .finally(() => setLoading(false));
+  }, []);
 
-//   return { items, loading, error };
-// };
+  return { items, loading, error };
+};
 
-// export default useApps;
+export default useItems;
