@@ -1,23 +1,40 @@
-
-import React from 'react';
-import Container from '../Container/Container';
-import wbLogo from '../../assets/Logo.png'
-import { Link, NavLink } from 'react-router';
+import React, { useState, useEffect } from "react";
+import Container from "../Container/Container";
+import wbLogo from "../../assets/Logo.png";
+import { Link, NavLink } from "react-router";
 import { FaCartPlus } from "react-icons/fa";
-import { IoSearchOutline } from 'react-icons/io5';
+import { IoSearchOutline } from "react-icons/io5";
 
+import { loadCartItems } from "../../utility/localStorage";
+import CartDropdown from "../../pages/CartDropdown/CartDropdown";
 
 const menuItems = [
   { id: "home", label: "Home", path: "/" },
   { id: "menu", label: "Our Menu", path: "/menu" },
   { id: "about", label: "About Us", path: "/about" },
 ];
-const Navbar = () => {
-  return (
 
+const Navbar = () => {
+  const [showCart, setShowCart] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
+
+  const updateCartCount = () => {
+    const items = loadCartItems();
+    const total = items.reduce((sum, i) => sum + i.quantity, 0);
+    setCartCount(total);
+  };
+
+  useEffect(() => {
+    updateCartCount(); // initial load
+    window.addEventListener("cartUpdated", updateCartCount);
+
+    return () => window.removeEventListener("cartUpdated", updateCartCount);
+  }, []);
+
+  return (
     <div className="bg-gradient-to-br from-rose-100 to-amber-200 shadow-lg">
       <Container>
-        <div className="navbar ">
+        <div className="navbar">
           {/* Left Side: Logo */}
           <div className="navbar-start">
             <div className="dropdown">
@@ -43,7 +60,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-amber-100 font-semibold rounded-box items-center z-1 mt-3 w-70 h-30 p-2 shadow text-amber-700 cursor-pointer"
+                className="menu menu-sm dropdown-content bg-amber-100 font-semibold rounded-box items-center z-10 mt-3 w-70 h-30 p-2 shadow text-amber-700 cursor-pointer"
               >
                 {menuItems.map((item) => (
                   <li key={item.id}>
@@ -53,7 +70,7 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* Logo + Title */}
+            {/* Logo */}
             <Link to="/" className="text-lg flex items-center gap-2">
               <img src={wbLogo} alt="Logo" className="w-[35px] h-[35px]" />
               <span className="bg-gradient-to-br from-green-700 to-amber-700 bg-clip-text text-transparent font-bold text-xl">
@@ -64,7 +81,7 @@ const Navbar = () => {
 
           {/* Center Links */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="flex justify-between items-center space-x-3 px-1 text-amber-700 text-sm  cursor-pointer">
+            <ul className="flex justify-between items-center space-x-3 px-1 text-amber-700 text-sm cursor-pointer">
               {menuItems.map((item) => (
                 <li key={item.id}>
                   <NavLink
@@ -80,18 +97,29 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Right Side: Cart Button */}
-          <div className="navbar-end cursor-pointer">
-            <div className="flex space-x-3">
-              <IoSearchOutline size={18} color="#ed6002" strokeWidth={1.25} />
+          {/* Right Side: Search, Cart, Sign In */}
+          <div className="navbar-end cursor-pointer flex items-center space-x-3 relative">
+            <IoSearchOutline size={18} color="#ed6002" strokeWidth={1.25} />
 
-              <FaCartPlus size={20} color="#ed6002" strokeWidth={1.25} />
+            <div className="relative">
+              <FaCartPlus
+                size={20}
+                color="#ed6002"
+                strokeWidth={1.25}
+                onClick={() => setShowCart(!showCart)}
+              />
+              {/* Always show cart count, even if 0 */}
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                {cartCount}
+              </span>
+              {showCart && <CartDropdown />}
             </div>
-            <div className="ml-3">
-              <button className="btn btn-soft btn-warning rounded-full text-amber-800">
-                Sing In
+
+     
+              <button className="ml-3 btn btn-soft btn-warning rounded-full text-amber-800">
+                Sign In
               </button>
-            </div>
+            
           </div>
         </div>
       </Container>

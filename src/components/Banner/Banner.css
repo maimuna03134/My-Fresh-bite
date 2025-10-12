@@ -35,18 +35,15 @@
 
 @keyframes textPing {
   0% {
-    transform: scale(0.8);
-    transform: translateY(40px);
+    transform: scale(0.8) translateY(2.5em);
     opacity: 0;
   }
   60% {
-     transform: scale(1.05);
-    transform: translateY(-10px);
+    transform: scale(1.05) translateY(-0.5em);
     opacity: 1;
   }
   100% {
-    transform: translateY(0);
-    transform: scale(1);
+    transform: scale(1) translateY(0);
     opacity: 1;
   }
 }
@@ -61,7 +58,7 @@
     width: 0ch;
   }
   100% {
-    width: 70ch; 
+    width: 100%;
   }
 }
 
@@ -77,9 +74,19 @@
 
 
 .typing-text {
-  /* display: inline-block; */
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #fff; 
   animation: typing 5s steps(40) 1 forwards, blinkCaret 1.5s step-end infinite;
+}
+
+
+@media (max-width: 768px) {
+  .animate-textPing {
+    animation-duration: 3s;
+  }
+  .typing-text {
+    animation: typing 3s steps(30) 1 forwards, blinkCaret 1s step-end infinite;
+  }
 }

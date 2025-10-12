@@ -1,71 +1,109 @@
 import Swal from "sweetalert2";
 
-// get carted items
+const CART_KEY = "cartedItems";
+
 export const loadCartItems = () => {
   try {
-    const data = localStorage.getItem("cartedItems");
+    const data = localStorage.getItem(CART_KEY);
     return data ? JSON.parse(data) : [];
   } catch (err) {
-    console.log(err);
+    console.error(err);
     return [];
   }
 };
 
-// add/update an item in cart
 export const addToCart = (item, quantity = 1) => {
   const cartedItems = loadCartItems();
+  const existingItem = cartedItems.find((i) => i._id === item._id);
 
-  try {
-    const existingItem = cartedItems.find((a) => a._id === item._id);
-
-    if (existingItem) {
-      // Increase quantity
-      const updatedItems = cartedItems.map((a) =>
-        a._id === item._id ? { ...a, quantity: a.quantity + quantity } : a
-      );
-      localStorage.setItem("cartedItems", JSON.stringify(updatedItems));
-
-      Swal.fire({
-        title: `${item.name} quantity updated!`,
-        text: `Now ${existingItem.quantity + quantity} in cart.`,
-        icon: "success",
-        confirmButtonColor: "#00D390",
-      });
-      return;
-    }
-
-    // Add new item with quantity
-    const updatedItems = [...cartedItems, { ...item, quantity }];
-    localStorage.setItem("cartedItems", JSON.stringify(updatedItems));
-
-    Swal.fire({
-      title: `${item.name} added to cart! 😍`,
-      text: "You can adjust quantity in the cart.",
-      icon: "success",
-      confirmButtonColor: "#00D390",
-    });
-  } catch (err) {
-    console.log(err);
+  if (existingItem) {
+    updateCartItem(item, quantity);
+    return;
   }
+
+  const updatedItems = [...cartedItems, { ...item, quantity }];
+  localStorage.setItem(CART_KEY, JSON.stringify(updatedItems));
+
+  // Dispatch event for reactive updates
+  window.dispatchEvent(new Event("cartUpdated"));
+
+  Swal.fire({
+    toast: true,
+    position: "top-end",
+    icon: "success",
+    title: `You added ${item.name} to cart`,
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
 };
 
-// remove an item from cart
-export const removeFromCart = (_id) => {
+export const updateCartItem = (item, quantityChange = 1) => {
   const cartedItems = loadCartItems();
-  try {
-    const updatedItems = cartedItems.filter((a) => a._id !== _id);
-    localStorage.setItem("cartedItems", JSON.stringify(updatedItems));
+  const existingItem = cartedItems.find((i) => i._id === item._id);
 
-    Swal.fire({
-      toast: true,
-      position: "top-center",
-      icon: "success",
-      title: "Item removed from cart ☺️",
-      showConfirmButton: false,
-      timer: 2000,
-      timerProgressBar: true,
-    });
-  } catch (err) {
-    console.log(err);
+  if (!existingItem) return addToCart(item, 1);
+
+  const newQuantity = existingItem.quantity + quantityChange;
+
+  if (newQuantity <= 0) {
+    removeFromCart(item._id, "decrease");
+    return;
   }
+
+  const updatedItems = cartedItems.map((i) =>
+    i._id === item._id ? { ...i, quantity: newQuantity } : i
+  );
+  localStorage.setItem(CART_KEY, JSON.stringify(updatedItems));
+
+  window.dispatchEvent(new Event("cartUpdated"));
+
+  Swal.fire({
+    toast: true,
+    position: "top-end",
+    icon: "success",
+    title:
+      quantityChange > 0
+        ? `Quantity of ${item.name} updated to ${newQuantity}`
+        : `You decreased ${item.name} quantity`,
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
+};
+
+export const removeFromCart = (_id, type = "remove") => {
+  const cartedItems = loadCartItems();
+  const updatedItems = cartedItems.filter((i) => i._id !== _id);
+  localStorage.setItem(CART_KEY, JSON.stringify(updatedItems));
+
+  window.dispatchEvent(new Event("cartUpdated"));
+
+  Swal.fire({
+    toast: true,
+    position: "top-end",
+    icon: "success",
+    title:
+      type === "remove"
+        ? "Item removed from cart"
+        : "Item quantity decreased to 0",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
+};
+
+export const clearCart = () => {
+  localStorage.removeItem(CART_KEY);
+  window.dispatchEvent(new Event("cartUpdated"));
+
+  Swal.fire({
+    toast: true,
+    position: "top-end",
+    icon: "success",
+    title: "Cart cleared",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
 };
