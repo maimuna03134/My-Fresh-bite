@@ -5,6 +5,7 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 import Loader from '../../components/Loader/Loader';
 import { GoSearch } from 'react-icons/go';
 import ItemCard from '../../components/ItemCard/ItemCard';
+import itemNotFound from '../../assets/not_found.png'
 
 const Menu = () => {
     const { items, loading, error } = useItems();
@@ -79,13 +80,23 @@ if (loading) {
           </div>
 
           {!searchLoading && searchedItems.length === 0 ? (
-            <div className="min-h-screen flex flex-col justify-center items-center">
-              <h1 className="text-5xl text-gray-400 text-opacity-70 font-extrabold text-center my-5 ">
-                Oops! We couldn’t find what you’re looking for.
-              </h1>
-              <p className="md:py-5 p-5 md:p-0 text-[#627382] text-sm">
-                Try searching for your favorite dish and place your order now!
-              </p>
+            <div className="min-h-screen flex flex-col justify-center items-center gap-2">
+             
+                <img
+                  src={itemNotFound}
+                  alt=""
+                  className="animate-pulse bg-transparent w-[300px] h-[300px]"
+                />
+                <div className='text-center'>
+                  <h1 className="text-5xl text-gray-400 text-opacity-70 font-extrabold text-center my-5 ">
+                    Oops! We couldn’t find what you’re looking for.
+                  </h1>
+                  <p className="md:py-5 p-5 md:p-0 text-[#627382] text-sm">
+                    Try searching for your favorite dish and place your order
+                    now!
+                  </p>
+                </div>
+    
 
               <a
                 href="/menu"
@@ -101,7 +112,6 @@ if (loading) {
               ))}
             </div>
           )}
-         
         </Container>
       </div>
     );

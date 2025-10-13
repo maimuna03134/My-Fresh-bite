@@ -6,6 +6,9 @@ import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 import App from "../App";
 import CartDropdown from "../pages/CartDropdown/CartDropdown";
+import FoodDetails from "../pages/FoodDetails/FoodDetails";
+import PlaceOrder from "../pages/PlaceOrder/PlaceOrder";
+import About from "../pages/About/About";
 
 export const router = createBrowserRouter([
   {
@@ -24,8 +27,20 @@ export const router = createBrowserRouter([
         Component: Menu,
       },
       {
+        path: "/about",
+        Component: About,
+      },
+      {
         path: "/cart",
         Component: CartDropdown,
+      },
+      {
+        path: "/menu/:id",
+        Component: FoodDetails,
+      },
+      {
+        path: "/order",
+        Component: PlaceOrder,
       },
     ],
   },

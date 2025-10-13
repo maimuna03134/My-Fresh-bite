@@ -13,10 +13,8 @@ const menuItems = [
 ];
 
 const Navbar = () => {
-  
-
   return (
-    <div className="bg-gradient-to-br from-rose-100 to-amber-200 shadow-lg">
+    <div className="bg-gradient-to-r from-[#DCD6D9] via-[#DC5F3F] to-[#D8B8B1] shadow-lg">
       <Container>
         <div className="navbar">
           {/* Left Side: Logo */}
@@ -65,7 +63,7 @@ const Navbar = () => {
 
           {/* Center Links */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="flex justify-between items-center space-x-3 px-1 text-amber-700 text-sm cursor-pointer">
+            <ul className="flex justify-between items-center space-x-3 px-1 text-white text-sm font-semibold cursor-pointer">
               {menuItems.map((item) => (
                 <li key={item.id}>
                   <NavLink
@@ -86,10 +84,9 @@ const Navbar = () => {
             <IoSearchOutline size={18} color="#ed6002" strokeWidth={1.25} />
 
             <div>
-              
               {/* Always show cart count, even if 0 */}
               <Link to="/cart">
-               <FaCartPlus size={20} color="#ed6002" strokeWidth={1.25} />
+                <FaCartPlus size={20} color="#ed6002" strokeWidth={1.25} />
               </Link>
             </div>
 
@@ -100,7 +97,6 @@ const Navbar = () => {
         </div>
       </Container>
     </div>
-    
   );
 };
 
