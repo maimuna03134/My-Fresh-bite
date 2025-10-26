@@ -12,6 +12,10 @@ import About from "../pages/About/About";
 
 import HomeLayouts from "../layouts/HomeLayouts";
 import AuthLayouts from "../layouts/AuthLayouts";
+import Login from "../pages/register&login/Login";
+import Register from "../pages/register&login/Register";
+import ForgotPassword from "../pages/register&login/ForgotPassword";
+import PrivateRoute from "../provider/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -35,20 +39,51 @@ export const router = createBrowserRouter([
       },
       {
         path: "/cart",
-        Component: CartDropdown,
+        element: (
+          <PrivateRoute>
+            <CartDropdown></CartDropdown>
+          </PrivateRoute>
+        ),
+        
       },
       {
         path: "/menu/:id",
-        Component: FoodDetails,
+        element: (
+          <PrivateRoute>
+            <FoodDetails></FoodDetails>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/order",
-        Component: PlaceOrder,
+        element: (
+          <PrivateRoute>
+            <PlaceOrder />
+          </PrivateRoute>
+        ),
       },
     ],
   },
   {
-    path: '/auth',
-    element:<AuthLayouts></AuthLayouts>
-  }
+    path: "/auth",
+    element: <AuthLayouts></AuthLayouts>,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/auth/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/auth/forgot-password",
+        element: <ForgotPassword></ForgotPassword>,
+      },
+    ],
+  },
+  {
+    path: "/*",
+    element: <h2>Error404</h2>,
+  },
 ]);
