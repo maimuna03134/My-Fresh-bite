@@ -1,15 +1,12 @@
-
-
 import React from "react";
-
-import { IoStarHalf } from "react-icons/io5";
 import { addToCart } from "../../utility/localStorage";
 import Swal from "sweetalert2";
-import {  Link } from "react-router";
+import { Link } from "react-router";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import { FaStar } from "react-icons/fa";
 
-const ItemCard = ({ item }) => {
-  const { image, name, rating, description, price, _id } = item || {};
+const ItemCard = ({ item,index }) => {
+  const { image, name, rating, description, price } = item || {};
 
   const handleAddToCart = () => {
     addToCart(item, 1); // quantity = 1
@@ -26,8 +23,14 @@ const ItemCard = ({ item }) => {
   // };
 
   return (
-    <div className="food-item card shadow-lg pb-4 relative rounded-xl bg-white hover:scale-105 transition ease-in-out border border-[#D8B8B1]">
-      <div className="relative">
+    <div
+      key={item._id}
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
+
+      className="food-item card pb-4 relative rounded-xl    hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+    >
+      <div className="relative mt-4 md:mt-0 ">
         <figure>
           <img
             className="object-cover w-[350px] h-[200px] rounded-t-xl cursor-pointer "
@@ -45,18 +48,31 @@ const ItemCard = ({ item }) => {
       </div>
 
       {/* Food Details */}
-      <div className="card-body p-4">
-        <div className="flex justify-between items-center mb-2">
+      <div className="card-body p-4 text-center md:text-start">
+        <div className="mb-2">
           <h2 className=" text-amber-600 hover:text-amber-700 text-lg font-semibold cursor-pointer">
             {name}
           </h2>
-          <span className="flex items-center gap-x-1 text-amber-700">
-            {rating} <IoStarHalf />
-          </span>
         </div>
 
         <p className="text-sm text-gray-600 mb-2">{description}</p>
-        <p className="text-base text-amber-600 font-semibold mb-4">৳ {price}</p>
+        <div className="flex flex-col md:flex-row items-center justify-between mb-2">
+          <p className="text-base text-amber-600 font-semibold">৳ {price}</p>
+          <div className="flex items-center gap-1 text-yellow-500">
+            {/* 5 Stars */}
+            {[...Array(5)].map((_, i) => (
+              <FaStar
+                key={i}
+                className={
+                  i < Math.round(rating) ? "text-yellow-500" : "text-gray-300"
+                }
+              />
+            ))}
+            <span className="ml-1 text-gray-700 font-semibold">
+              {rating.toFixed(1)}
+            </span>
+          </div>
+        </div>
 
         {/* Buttons */}
         <div className="flex gap-2 justify-center">
@@ -67,7 +83,8 @@ const ItemCard = ({ item }) => {
             Add to Cart
           </button>
 
-          <Link to='/order'
+          <Link
+            to="/order"
             // onClick={handleOrderNow}
             className="btn btn-outline bg-gradient-to-br from-green-300 to-amber-700 text-white font-bold "
           >

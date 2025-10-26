@@ -44,7 +44,7 @@ if (loading) {
     return (
       <div className="mt-10">
         <Container>
-          <div className="text-center py-6">
+          <div className="text-center py-6" data-aos="zoom-in">
             <h2 className="text-4xl font-bold text-amber-700  ">
               Explore the Best Dishes Near You 😍😍
             </h2>
@@ -81,22 +81,19 @@ if (loading) {
 
           {!searchLoading && searchedItems.length === 0 ? (
             <div className="min-h-screen flex flex-col justify-center items-center gap-2">
-             
-                <img
-                  src={itemNotFound}
-                  alt=""
-                  className="animate-pulse bg-transparent w-[300px] h-[300px]"
-                />
-                <div className='text-center'>
-                  <h1 className="text-5xl text-gray-400 text-opacity-70 font-extrabold text-center my-5 ">
-                    Oops! We couldn’t find what you’re looking for.
-                  </h1>
-                  <p className="md:py-5 p-5 md:p-0 text-[#627382] text-sm">
-                    Try searching for your favorite dish and place your order
-                    now!
-                  </p>
-                </div>
-    
+              <img
+                src={itemNotFound}
+                alt=""
+                className="animate-pulse bg-transparent w-[300px] h-[300px]"
+              />
+              <div className="text-center">
+                <h1 className="text-5xl text-gray-400 text-opacity-70 font-extrabold text-center my-5 ">
+                  Oops! We couldn’t find what you’re looking for.
+                </h1>
+                <p className="md:py-5 p-5 md:p-0 text-[#627382] text-sm">
+                  Try searching for your favorite dish and place your order now!
+                </p>
+              </div>
 
               <a
                 href="/menu"

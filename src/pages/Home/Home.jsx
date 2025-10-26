@@ -35,12 +35,11 @@ if (!loading && items.length === 0) {
 
     return (
       <div>
+        <div className="">
+          <Banner />
+        </div>
         <Container>
-          <div className="">
-            <Banner />
-          </div>
-
-          <div className="text-center py-6 my-10">
+          <div className="text-center py-6 my-10" data-aos="zoom-in-up">
             <h2 className="text-4xl font-bold text-[#001931]">
               The Taste You’ll Love
             </h2>
@@ -51,12 +50,18 @@ if (!loading && items.length === 0) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
-            {featuredItems.map((item) => (
-              <ItemCard key={item._id} item={item} />
+            {featuredItems.map((item, index) => (
+              <div
+                key={item._id}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <ItemCard item={item} />
+              </div>
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center" data-aos="zoom-in-down">
             <Link
               className="btn btn-outline bg-gradient-to-br from-green-300 to-amber-700 text-white font-bold"
               to="/menu"
