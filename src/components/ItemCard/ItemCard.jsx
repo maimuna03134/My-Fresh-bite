@@ -27,7 +27,6 @@ const ItemCard = ({ item,index }) => {
       key={item._id}
       data-aos="fade-up"
       data-aos-delay={index * 100}
-
       className="food-item card pb-4 relative rounded-xl    hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
     >
       <div className="relative mt-4 md:mt-0 ">
@@ -84,7 +83,7 @@ const ItemCard = ({ item,index }) => {
           </button>
 
           <Link
-            to="/order"
+            to="/cart"
             // onClick={handleOrderNow}
             className="btn btn-outline bg-gradient-to-br from-green-300 to-amber-700 text-white font-bold "
           >

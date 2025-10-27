@@ -95,7 +95,7 @@ const FoodDetails = () => {
                 </span>
               ))}
             </div>
-            <Link to="/order">
+            <Link to="/cart">
               <div className="flex justify-center lg:justify-start gap-4 mt-4">
                 <button className="bg-[#FF6B35] hover:bg-[#D94F1B] text-white px-6 py-3 rounded-lg font-bold ">
                   Order Now
