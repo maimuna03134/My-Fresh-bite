@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import HomeItemSlice from '../itemSlice/HomeItemSlice';
 import DeliveryBanner from '../deliveryBanner/DeliveryBanner';
+import ClientFeedback from '../clientReview/ClientFeedback';
 
 
 const Home = () => (
@@ -17,6 +18,10 @@ const Home = () => (
     {/* delivery banner section */}
     <section>
       <DeliveryBanner />
+    </section>
+    {/* client feedback */}
+    <section>
+      <ClientFeedback/>
     </section>
   </div>
 );

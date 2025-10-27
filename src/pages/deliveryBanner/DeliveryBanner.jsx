@@ -15,7 +15,7 @@ const DeliveryBanner = () => {
         <div className="bg-linear-to-br from-[#d7c5c1] to-[#dcd6d9] rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-8 items-center p-8 lg:p-16">
             {/* Left Content */}
-            <div className="space-y-6">
+            <div className="space-y-6" data-aos="fade-up-right">
               {/* Delivery Badge */}
               <div className="inline-block">
                 <span className="text-red-500 font-bold text-lg italic">
@@ -65,7 +65,10 @@ const DeliveryBanner = () => {
             </div>
 
             {/* Right Illustration */}
-            <div className="relative flex items-center justify-center">
+            <div
+              className="relative flex items-center justify-center"
+              data-aos="fade-up-left"
+            >
               {/* Background Clouds */}
               <div className="absolute top-0 right-20 w-32 h-16 bg-blue-200 rounded-full opacity-30 blur-xl"></div>
               <div className="absolute top-10 right-40 w-24 h-12 bg-blue-200 rounded-full opacity-40 blur-lg"></div>
