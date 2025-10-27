@@ -183,7 +183,7 @@ const CartDropdown = () => {
                             <IoStar /> {item.rating}
                           </span>
                           <span className="text-2xl font-bold text-[#00D390]">
-                            ${item.price}
+                            ৳{item.price}
                           </span>
                         </div>
 
@@ -217,7 +217,7 @@ const CartDropdown = () => {
                           <div className="text-right">
                             <p className="text-sm text-gray-500">Subtotal</p>
                             <p className="text-2xl font-bold text-[#001931]">
-                              ${calculateSubtotal(item)}
+                              ৳{calculateSubtotal(item)}
                             </p>
                           </div>
                         </div>
