@@ -221,9 +221,8 @@ Restaurant information page including:
 
 ### Repository
 
-- **GitHub Repository:** https://github.com/your-username/freshbite
-- **Issues & Bug Reports:** https://github.com/your-username/freshbite/issues
-- **Pull Requests:** https://github.com/your-username/freshbite/pulls
+- **GitHub Repository:** https://github.com/maimuna03134/My-Fresh-bite.git
+
 
 ### Documentation
 
@@ -239,114 +238,8 @@ Restaurant information page including:
 - **DaisyUI Components:** https://daisyui.com/
 - **React Icons:** https://react-icons.github.io/react-icons/
 
-### Social & Contact
-
-- **📧 Email:** your-email@example.com
-- **💼 LinkedIn:** https://linkedin.com/in/your-profile
-- **🐦 Twitter:** https://twitter.com/your-handle
-- **💬 Support:** [Add support channel]
-
-### Tools & Services
-
-- **Firebase Console:** https://console.firebase.google.com
-- **Vercel Deployment:** https://vercel.com
-- **Netlify Deployment:** https://netlify.com
-
 ---
 
-## 🤝 Contributing
-
-We love contributions! Follow these steps to contribute to FreshBite:
-
-### 1. Fork the Repository
-
-Click the **Fork** button on GitHub to create your own copy.
-
-### 2. Clone Your Fork
-
-```bash
-git clone https://github.com/your-username/freshbite.git
-cd freshbite
-```
-
-### 3. Create a Feature Branch
-
-```bash
-git checkout -b feature/YourFeatureName
-```
-
-Use descriptive names like:
-- `feature/add-payment-system`
-- `feature/user-authentication`
-- `fix/cart-calculation-bug`
-- `docs/update-readme`
-
-### 4. Make Your Changes
-
-Edit files and test your changes locally:
-
-```bash
-npm run dev
-```
-
-### 5. Commit Your Changes
-
-```bash
-git add .
-git commit -m "Brief description of changes"
-```
-
-### 6. Push to Your Fork
-
-```bash
-git push origin feature/YourFeatureName
-```
-
-### 7. Create a Pull Request
-
-- Go to the original repository on GitHub
-- Click **"Compare & pull request"**
-- Add a clear title and description of your changes
-- Reference any related issues
-- Click **"Create pull request"**
-
-### Guidelines
-
-- Keep commits clean and descriptive
-- Test your code thoroughly before submitting
-- Follow the existing code style and conventions
-- Update documentation if needed
-- Be respectful and constructive in discussions
-- Ensure your changes don't break existing functionality
-
-### Reporting Issues
-
-Found a bug or have a suggestion? Create an issue with:
-- Clear and descriptive title
-- Detailed description of the issue
-- Steps to reproduce (for bugs)
-- Expected vs actual behavior
-- Screenshots or error logs if applicable
-- Browser and OS information
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## 💬 Support & Feedback
-
-For questions, feedback, or support:
-
-- Create an issue in the repository
-- Contact the development team via email
-- Visit the live website: https://your-live-link-here.com
-- Check our documentation for common questions
-
----
 
 ## 🙏 Acknowledgments
 
