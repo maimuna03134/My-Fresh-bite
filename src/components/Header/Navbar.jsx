@@ -81,7 +81,6 @@ const Navbar = () => {
                         Login
                       </Link>
                     </li>
-                    
                   </>
                 )}
               </ul>
@@ -89,7 +88,7 @@ const Navbar = () => {
 
             {/* Logo */}
             <Link to="/" className="text-lg flex items-center gap-2">
-              <img src={wbLogo} alt="Logo" className="w-[35px] h-[35px]" />
+              <img src={wbLogo} alt="Logo" className="w-[40px] h-[35px]" />
               <span className="bg-gradient-to-br from-green-700 to-amber-700 bg-clip-text text-transparent font-bold text-xl">
                 FreshBite
               </span>
@@ -116,7 +115,7 @@ const Navbar = () => {
             <div className="mr-4">
               {/* Always show cart count, even if 0 */}
               <Link to="/cart">
-                <FaCartPlus size={20} color="#ed6002" strokeWidth={1.25} />
+                <FaCartPlus size={20} color=" #FFFFFF" strokeWidth={1.25} />
               </Link>
             </div>
             <div className="relative group">

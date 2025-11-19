@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router";
+import { Link,  useParams } from "react-router";
 import useItems from "../../hooks/useItems";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Loader from "../../components/Loader/Loader";
@@ -12,6 +12,7 @@ const FoodDetails = () => {
   const { items, loading, error } = useItems();
   const [item, setItem] = useState(null);
   const [showLoader, setShowLoader] = useState(true);
+ 
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
@@ -85,7 +86,7 @@ const FoodDetails = () => {
 
             <p className="text-gray-700 leading-relaxed">{description}</p>
 
-            <div className="flex justify-center flex-wrap gap-2 mt-4">
+            <div className="flex justify-center lg:justify-start flex-wrap gap-2 mt-4">
               {ingredients?.map((ing, index) => (
                 <span
                   key={index}
@@ -95,13 +96,16 @@ const FoodDetails = () => {
                 </span>
               ))}
             </div>
-            <Link to="/cart">
-              <div className="flex justify-center lg:justify-start gap-4 mt-4">
-                <button className="bg-[#FF6B35] hover:bg-[#D94F1B] text-white px-6 py-3 rounded-lg font-bold ">
-                  Order Now
-                </button>
-              </div>
-            </Link>
+         
+              <Link to="/menu">
+                <div className="flex justify-center lg:justify-start gap-4 mt-4">
+                  <button className="bg-[#FF6B35] hover:bg-[#D94F1B] text-white px-6 py-3 rounded-lg font-bold ">
+                    Order Now
+                  </button>
+                </div>
+              </Link>
+             
+           
           </div>
         </div>
       </div>

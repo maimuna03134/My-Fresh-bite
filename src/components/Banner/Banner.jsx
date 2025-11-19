@@ -45,26 +45,26 @@ const Banner = () => {
       pagination={{ clickable: true }}
       autoplay={{ delay: 6000 }}
       loop={true}
-      className="h-[80vh] w-full my-10"
+      className="h-[90vh] w-full my-10"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="h-[80vh] w-full bg-center bg-cover flex flex-col justify-center items-center text-white relative"
+            className="h-[90vh] w-full bg-center bg-cover flex flex-col justify-center items-center text-white relative "
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className="absolute inset-0 bg-black/50"></div>
 
             <div className="hero-content text-neutral-content ">
               <div className="relative z-10 text-center px-4 lg:mt-30 py-10 lg:mr-36">
-                <h1 className="animate-textPing mb-5 text-3xl sm:text-4xl md:text-5xl font-bold lg:leading-16 ">
+                <h1 className="animate-textPing mb-5 text-2xl md:text-3xl lg:text-5xl font-bold lg:leading-16 ">
                   {slide.title}
                 </h1>
-                <p className="typing-text text-sm md:text-base leading-5 md:leading-7 text-white my-4">
+                <p className="text-sm md:text-base leading-5 md:leading-7 text-white my-4 ">
                   {slide.subtitle}
                 </p>
                 <Link to="/menu">
-                  <button className=" btn bg-amber-200 hover:bg-amber-700 hover:text-amber-100 text-amber-700 fon rounded-full">
+                  <button className=" btn bg-amber-200 hover:bg-amber-700 hover:text-amber-100 text-amber-700 fon rounded-full mb-10 md:mb-6 lg:mb-10">
                     View Menu{" "}
                   </button>
                 </Link>

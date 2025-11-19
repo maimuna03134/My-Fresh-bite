@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate} from "react-router";
 import Container from "../../components/Container/Container";
 import {
   loadCartItems,
@@ -19,6 +19,7 @@ const CartDropdown = () => {
   const [cartedItems, setCartedItems] = useState([]);
   const [showLoader, setShowLoader] = useState(true);
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   // Load cart items on mount and listen for updates
   useEffect(() => {
@@ -97,15 +98,29 @@ const CartDropdown = () => {
 
   // Handle proceed to checkout
   const handleCheckout = () => {
-    navigate("/checkout");
-  };
+ navigate("/checkout");
+  }
 
   if (error) return <ErrorPage />;
   if (showLoader) return <Loader />;
   if (!showLoader && cartedItems.length === 0) {
     return (
       <Container>
-        <h2 className="text-center text-2xl mt-10">Your cart is empty!</h2>
+        <div className="flex flex-col items-center justify-center py-16">
+          <FiShoppingCart className="text-gray-300 text-8xl mb-4" />
+          <h2 className="text-3xl font-semibold text-gray-700 mb-2">
+            Your cart is empty!
+          </h2>
+          <p className="text-gray-500 mb-6">
+            Add some delicious items to get started
+          </p>
+          <Link to='/menu'
+          
+            className="bg-[#00D390] hover:bg-[#00b378] text-white px-6 py-3 rounded-lg font-medium transition-all"
+          >
+            Continue Shopping
+          </Link>
+        </div>
       </Container>
     );
   }
@@ -119,7 +134,7 @@ const CartDropdown = () => {
             <h1 className="text-4xl font-bold text-[#001931] mb-2">
               Shopping Cart
             </h1>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-lg p-2 md:p-0">
               Review and manage your selected items
             </p>
           </div>
@@ -188,9 +203,9 @@ const CartDropdown = () => {
                         </div>
 
                         {/* Quantity Controls and Subtotal */}
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col md:flex-row items-center justify-between">
                           {/* Quantity Controls */}
-                          <div className="flex items-center gap-3">
+                          <div className="flex flex-col md:flex-row items-center gap-3">
                             <span className="text-gray-600 font-medium">
                               Quantity:
                             </span>
@@ -272,10 +287,7 @@ const CartDropdown = () => {
                   Proceed to Checkout
                 </button>
                 <Link to="/menu">
-                  <button
-                    onClick={() => navigate("/")}
-                    className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 rounded-lg transition-all"
-                  >
+                  <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 rounded-lg transition-all">
                     Continue Shopping
                   </button>
                 </Link>

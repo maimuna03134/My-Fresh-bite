@@ -1,174 +1,390 @@
-# 🥙 FreshBite – Food Ordering Website
+# FreshBite – Food Ordering Website 🥙
 
-### A Modern, Responsive, and Interactive App Showcase Platform built with React.js, Tailwind CSS & DaisyUI
+A modern, responsive, and interactive food ordering platform built with React.js, Tailwind CSS, and DaisyUI. FreshBite provides users with an intuitive interface to browse, search, filter, and order their favorite meals with ease and style.
 
-## 📝 **FreshBite** is a modern and responsive food ordering website designed to allow users to browse, order, and enjoy their favorite meals easily. The platform is playful, user-friendly, and visually appealing, with fun error pages and smooth navigation.
+**Live Link:** https://your-live-link-here.com
 
-## 📌 Project Overview
+---
 
-FreshBite provides users with:
+## 📋 Project Overview
 
-A vibrant home page with a banner and call-to-action.
+FreshBite is a comprehensive food ordering platform designed to deliver a seamless user experience from browsing to checkout. The application features a vibrant interface with smooth animations, interactive components, and playful error handling. Whether you're looking for your favorite dish or exploring new menu items, FreshBite makes food ordering fun and effortless. The platform includes a responsive design optimized for both desktop and mobile devices with persistent cart functionality.
 
-A menu page to browse, search, and filter dishes.
+---
 
-Detailed item pages with images, descriptions, and ratings.
+## ✨ Key Features
 
-Add-to-cart functionality and order placement (with placeholder page).
+- **🏠 Home Page** - Vibrant hero banner with call-to-action and smooth animations
+- **🍽️ Menu Browsing** - Responsive grid layout showcasing all available dishes with beautiful visuals
+- **🔍 Search & Filter** - Dynamic search functionality and advanced filtering to find dishes instantly
+- **📄 Item Details** - Comprehensive item pages with images, descriptions, prices, and ratings
+- **🛒 Shopping Cart** - Add to cart functionality with persistent storage and item management
+- **✨ Smooth Animations** - Engaging animations and transitions using Framer Motion and AOS
+- **🎯 Order Management** - Easy order placement with confirmation notifications
+- **📱 Responsive Design** - Mobile-first design that works seamlessly on all devices
+- **⚠️ Playful Error Pages** - Fun 404 and item not found pages with engaging content
+- **💬 Notifications** - SweetAlert2 for elegant user notifications and confirmations
+- **🍃 Loading States** - Smooth loader animations across all pages for better UX
+- **📋 About Page** - Restaurant information and mission statement
 
-About page to introduce the restaurant and its mission.
+---
 
-Interactive error pages for 404, item not found, and coming soon features.
+## 🛠️ Technology Stack
 
-## 🏗 Technologies Used
+| Technology                   | Purpose                                                   |
+| ---------------------------- | --------------------------------------------------------- |
+| **React 19.1.1**             | Frontend framework for building interactive UI components |
+| **Vite**                     | Fast build tool and development server                    |
+| **Tailwind CSS 4.1.14**      | Utility-first CSS framework for styling                   |
+| **DaisyUI**                  | Tailwind CSS component library                            |
+| **Firebase 12.4.0**          | Backend services (Authentication, Database, Hosting)      |
+| **React Router 7.9.4**       | Client-side routing and navigation                        |
+| **Axios 1.12.2**             | HTTP client for API requests                              |
+| **Swiper 12.0.3**            | Touch slider and carousel component                       |
+| **React Hot Toast 2.6.0**    | Toast notification system                                 |
+| **SweetAlert2 11.26.1**      | Beautiful alert dialogs and notifications                 |
+| **React Icons 5.5.0**        | Icon library                                              |
+| **AOS 2.3.4**                | Scroll animation library                                  |
+| **@tailwindcss/vite 4.1.14** | Tailwind CSS Vite plugin                                  |
 
-Frontend: React.js
+---
 
-Styling: Tailwind CSS
+## 📦 Dependencies
 
-Routing: React Router
+```json
+{
+  "@tailwindcss/vite": "^4.1.14",
+  "aos": "^2.3.4",
+  "axios": "^1.12.2",
+  "firebase": "^12.4.0",
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "react-hot-toast": "^2.6.0",
+  "react-icons": "^5.5.0",
+  "react-router": "^7.9.4",
+  "sweetalert2": "^11.26.1",
+  "swiper": "^12.0.3",
+  "tailwindcss": "^4.1.14"
+}
+```
 
-Icons: React Icons
+---
 
-Notifications: SweetAlert2
+## 🚀 Installation & Setup Guide
 
-Local Storage: Cart persistence
+### Prerequisites
 
-Animations: Framer Motion and CSS animations
+Make sure you have the following installed on your machine:
 
-## 🖼 Website Structure & Features
-1. Navbar
+- **Node.js** (v16 or higher)
+- **npm** or **yarn** package manager
+- **Git** for version control
 
-Responsive navigation with links to Home, Menu, About.
+### Step 1: Clone the Repository
 
-Cart icon with live item count.
+```bash
+git clone https://github.com/your-username/freshbite.git
+cd freshbite
+```
 
-Search bar for quick item lookup.
+### Step 2: Install Dependencies
 
-Mobile-friendly dropdown menu.
+Using npm:
 
-2. Banner
+```bash
+npm install
+```
 
-Hero section with a background image and gradient overlay.
 
-Animated headline text.
+Complete install command with all dependencies:
 
-Call-to-action button linking to menu.
+```bash
+npm install aos@^2.3.4 axios@^1.12.2 react-hot-toast@^2.6.0 react-icons@^5.5.0 react-router@^7.9.4 sweetalert2@^11.26.1 swiper@^12.0.3 firebase@^12.4.0 tailwindcss@^4.1.14 @tailwindcss/vite@^4.1.14
+```
 
-3. Menu Page
 
-Displays all dishes in a responsive grid layout.
+### Step 3: Run Development Server
 
-Live search and filtering with loader animations.
+```bash
+npm run dev
+```
 
-Fun “Item Not Found” illustration for empty search results.
+The application will start at `http://localhost:5173` (or another available port)
 
-Each item links to a detailed page.
+### Step 4: Build for Production
 
-4. Item Details Page
+```bash
+npm run build
+```
 
-Shows full details of a selected item: image, description, price, rating.
+The optimized production build will be generated in the `dist` folder.
 
-Add to cart and “Order Now” buttons.
+### Step 5: Preview Production Build
 
-Error handling for invalid item paths.
+```bash
+npm run preview
+```
 
-5. Cart & Order Pages
+---
 
-Cart displays all added items with price and quantity.
+## 🔧 Available Scripts
 
-Users can remove items or proceed to order.
+In the project directory, you can run:
 
-Loader and error handling for smooth UX.
+- `npm run dev` - Start the development server
+- `npm run build` - Create an optimized production build
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run linting (if configured)
 
-Order page currently has a playful placeholder.
+---
 
-6. About Page
+## 🎯 Features in Detail
 
-Provides restaurant information and mission statement.
+### Home Page
 
-Includes playful text and emojis for engagement.
+The landing page features a vibrant hero banner with a call-to-action button, smooth scroll animations, and an introduction to FreshBite's mission. Users are immediately guided to explore the menu.
 
-Loader and error handling included.
+### Menu Page
 
-7. Footer
+Browse all available dishes in a responsive grid layout. The menu includes:
+- Dynamic search functionality for quick item lookup
+- Advanced filtering options
+- Loading states for smooth content rendering
+- Beautiful item cards with images and brief descriptions
+- "Item Not Found" state with playful illustrations
 
-Company logo and description.
+### Item Details Page
 
-Quick links for company info, services, and social media.
+Comprehensive product pages featuring:
+- High-quality item images
+- Detailed descriptions and ingredient information
+- Customer ratings and reviews
+- Price information
+- Add to Cart and Order Now buttons
+- Error handling for invalid item paths
 
-Responsive design for all devices.
+### Shopping Cart
 
-8. Error Pages
+Complete cart management system with:
+- View all added items with quantities and prices
+- Remove items functionality
+- Cart total calculation
+- Persistent storage using localStorage
+- Proceed to checkout option
+- Empty cart state handling
 
-404 Not Found page with playful text and emojis.
+### Order Page
 
-Item Not Found page for invalid item paths.
+Order placement interface with:
+- Order summary and review
+- Placeholder for payment integration
+- Order confirmation notifications
+- Future enhancements for real payment processing
 
-Temporary “Order Page Coming Soon” placeholder page.
+### About Page
 
-9. Loader
+Restaurant information page including:
+- Company mission and story
+- Restaurant values and philosophy
+- Engaging content with visual elements
+- Team information (ready for expansion)
 
-Smooth loading animations for Menu, Item Details, Cart, and About pages.
+### Navigation & Layout
 
-Improves user experience and prevents abrupt content flashes.
+- **Responsive Navbar** - Mobile-friendly navigation with dropdown menu
+- **Search Bar** - Quick search functionality across the menu
+- **Cart Icon** - Live item count indicator
+- **Footer** - Company info, quick links, and social media
 
-## 🎨 Design Approach
+### Error Handling
 
-Color Palette: Warm and appetizing colors like amber, orange, and green.
+- **404 Not Found Page** - Playful design for invalid routes
+- **Item Not Found Page** - Friendly message when item doesn't exist
+- **Coming Soon Page** - Placeholder for future features
 
-Typography: Bold and readable fonts for headings; clean font for body text.
+### User Experience Features
 
-Layout: Responsive grids for items, flexible sections for banners and footers.
+- **Smooth Animations** - AOS library for scroll animations and Framer Motion effects
+- **Toast Notifications** - React Hot Toast for success/error messages
+- **Alert Dialogs** - SweetAlert2 for confirmations and important notifications
+- **Loading States** - Skeleton screens and loaders for better UX
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
 
-Interactivity: Hover effects, animations, and SweetAlert notifications.
+---
 
-Playfulness: Fun emojis and messages on error pages and temporary features.
+## 🔗 Important Links & Resources
 
-## ⚡ User Flow
+### Live Application
 
-Landing/Home Page: Features banner and navigates to menu.
+- **🌐 Live Website:** https://freshbite---food-delivery.web.app
+- **📱 Mobile Responsive:** Works on all devices
 
-Menu Page: Browse/search dishes → click item → go to item details.
+### Repository
 
-Item Details: Add to cart or order now.
+- **GitHub Repository:** https://github.com/your-username/freshbite
+- **Issues & Bug Reports:** https://github.com/your-username/freshbite/issues
+- **Pull Requests:** https://github.com/your-username/freshbite/pulls
 
-Cart: Review items → remove or proceed to order.
+### Documentation
 
-Order Page: Placeholder fun page until full ordering system is ready.
+- **React Documentation:** https://react.dev
+- **Firebase Docs:** https://firebase.google.com/docs
+- **Tailwind CSS:** https://tailwindcss.com
+- **Vite Guide:** https://vitejs.dev/guide/
+- **React Router:** https://reactrouter.com
+- **Axios Documentation:** https://axios-http.com/
+- **SweetAlert2:** https://sweetalert2.github.io/
+- **AOS Library:** https://michalsnik.github.io/aos/
+- **Swiper JS:** https://swiperjs.com/
+- **DaisyUI Components:** https://daisyui.com/
+- **React Icons:** https://react-icons.github.io/react-icons/
 
-About Page: Learn about FreshBite.
+### Social & Contact
 
-Error Pages: Friendly pages for invalid paths or missing items.
+- **📧 Email:** your-email@example.com
+- **💼 LinkedIn:** https://linkedin.com/in/your-profile
+- **🐦 Twitter:** https://twitter.com/your-handle
+- **💬 Support:** [Add support channel]
 
-## 🚀 Features Summary
+### Tools & Services
 
-Responsive UI and mobile-first design.
+- **Firebase Console:** https://console.firebase.google.com
+- **Vercel Deployment:** https://vercel.com
+- **Netlify Deployment:** https://netlify.com
 
-Dynamic search and filtering for menu items.
+---
 
-Add to cart functionality with SweetAlert notifications.
+## 🤝 Contributing
 
-Interactive banners and hover effects.
+We love contributions! Follow these steps to contribute to FreshBite:
 
-Fun and playful error handling pages.
+### 1. Fork the Repository
 
-Loader animations for smooth content rendering.
+Click the **Fork** button on GitHub to create your own copy.
 
-Local storage integration for cart persistence.
+### 2. Clone Your Fork
 
-## 👨‍💻 Next Steps / Enhancements
+```bash
+git clone https://github.com/your-username/freshbite.git
+cd freshbite
+```
 
-Full order placement and payment integration.
+### 3. Create a Feature Branch
 
-User authentication and personalized accounts.
+```bash
+git checkout -b feature/YourFeatureName
+```
 
-Admin panel for managing menu items.
+Use descriptive names like:
+- `feature/add-payment-system`
+- `feature/user-authentication`
+- `fix/cart-calculation-bug`
+- `docs/update-readme`
 
-Additional animations and micro-interactions for improved UX.
+### 4. Make Your Changes
 
-This README provides a complete overview of the FreshBite project, explaining its purpose, structure, features, and design approach in a clean and professional manner, ready for GitHub.
+Edit files and test your changes locally:
 
-## 👩‍💻 Author
+```bash
+npm run dev
+```
 
-Developed by: Raikatun Naim Maimuna, Sobat Binte Mannan & Farjana Mim
+### 5. Commit Your Changes
+
+```bash
+git add .
+git commit -m "Brief description of changes"
+```
+
+### 6. Push to Your Fork
+
+```bash
+git push origin feature/YourFeatureName
+```
+
+### 7. Create a Pull Request
+
+- Go to the original repository on GitHub
+- Click **"Compare & pull request"**
+- Add a clear title and description of your changes
+- Reference any related issues
+- Click **"Create pull request"**
+
+### Guidelines
+
+- Keep commits clean and descriptive
+- Test your code thoroughly before submitting
+- Follow the existing code style and conventions
+- Update documentation if needed
+- Be respectful and constructive in discussions
+- Ensure your changes don't break existing functionality
+
+### Reporting Issues
+
+Found a bug or have a suggestion? Create an issue with:
+- Clear and descriptive title
+- Detailed description of the issue
+- Steps to reproduce (for bugs)
+- Expected vs actual behavior
+- Screenshots or error logs if applicable
+- Browser and OS information
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 💬 Support & Feedback
+
+For questions, feedback, or support:
+
+- Create an issue in the repository
+- Contact the development team via email
+- Visit the live website: https://your-live-link-here.com
+- Check our documentation for common questions
+
+---
+
+## 🙏 Acknowledgments
+
+- All contributors and supporters
+- Firebase for hosting and backend services
+- The React.js and open-source community
+- Libraries and tools that made this project possible:
+  - Tailwind CSS for elegant styling
+  - DaisyUI for beautiful components
+  - SweetAlert2 for user interactions
+  - AOS for smooth animations
+  - React Router for seamless navigation
+
+---
+
+## 🚀 Future Enhancements
+
+- Full payment gateway integration (Stripe, PayPal)
+- User authentication and personalized accounts
+- Order history and tracking
+- Wishlists and favorite items
+- Customer reviews and ratings system
+- Admin panel for menu management
+- Email notifications for orders
+- Loyalty rewards program
+- Multi-language support
+- Dark mode theme
+
+---
+
+## 📊 Performance
+
+- Optimized bundle size with Vite
+- Lazy loading for images and components
+- Caching strategies for better performance
+- Mobile-first responsive design
+- SEO-friendly structure
+
+---
+
+**Enjoy delicious food ordering with FreshBite! 🥙✨**

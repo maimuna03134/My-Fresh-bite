@@ -35,15 +35,15 @@
 
 @keyframes textPing {
   0% {
-    transform: scale(0.8) translateY(2.5em);
+    transform: scale(0.5) translateY(1.2em);
     opacity: 0;
   }
   60% {
-    transform: scale(1.05) translateY(-0.5em);
+    transform: scale(0.6) translateY(-0.5em);
     opacity: 1;
   }
   100% {
-    transform: scale(1) translateY(0);
+    transform: scale(0.7) translateY(0);
     opacity: 1;
   }
 }
@@ -59,6 +59,7 @@
   }
   100% {
     width: 100%;
+    padding: 10px;
   }
 }
 
@@ -84,9 +85,10 @@
 
 @media (max-width: 768px) {
   .animate-textPing {
-    animation-duration: 3s;
+    animation-duration: 4s;
   }
   .typing-text {
     animation: typing 3s steps(30) 1 forwards, blinkCaret 1s step-end infinite;
+    
   }
 }

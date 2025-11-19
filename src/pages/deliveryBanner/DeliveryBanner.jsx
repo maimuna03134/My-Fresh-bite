@@ -56,7 +56,7 @@ const DeliveryBanner = () => {
                     </p>
                   </div>
                 </div>
-                <Link to="/order">
+                <Link to="/menu">
                   <button className="btn btn-lg bg-red-500 hover:bg-red-600 text-white border-none rounded-xl px-8 shadow-lg hover:shadow-xl transition-all duration-300 text-lg font-semibold">
                     Order Now
                   </button>

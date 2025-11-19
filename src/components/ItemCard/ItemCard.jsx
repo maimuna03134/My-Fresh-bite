@@ -27,7 +27,7 @@ const ItemCard = ({ item,index }) => {
       key={item._id}
       data-aos="fade-up"
       data-aos-delay={index * 100}
-      className="food-item card pb-4 relative rounded-xl    hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+      className="food-item card pb-4 relative rounded-xl    hover:shadow-2xl  duration-300 transition-all"
     >
       <div className="relative mt-4 md:mt-0 ">
         <figure>

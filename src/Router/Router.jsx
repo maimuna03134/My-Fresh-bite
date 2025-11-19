@@ -7,7 +7,7 @@ import Menu from "../pages/Menu/Menu";
 import App from "../App";
 import CartDropdown from "../pages/CartDropdown/CartDropdown";
 import FoodDetails from "../pages/FoodDetails/FoodDetails";
-import PlaceOrder from "../pages/PlaceOrder/PlaceOrder";
+
 import About from "../pages/About/About";
 
 import HomeLayouts from "../layouts/HomeLayouts";
@@ -16,6 +16,7 @@ import Login from "../pages/register&login/Login";
 import Register from "../pages/register&login/Register";
 import ForgotPassword from "../pages/register&login/ForgotPassword";
 import PrivateRoute from "../provider/PrivateRoute";
+import CheckoutPage from "../pages/PlaceOrder/CheckoutPage";
 
 export const router = createBrowserRouter([
   {
@@ -44,8 +45,8 @@ export const router = createBrowserRouter([
             <CartDropdown></CartDropdown>
           </PrivateRoute>
         ),
-        
       },
+
       {
         path: "/menu/:id",
         element: (
@@ -55,10 +56,10 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/order",
+        path: "/checkout",
         element: (
           <PrivateRoute>
-            <PlaceOrder />
+            <CheckoutPage></CheckoutPage>
           </PrivateRoute>
         ),
       },
