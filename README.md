@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive food ordering platform built with React.js, Tailwind CSS, and DaisyUI. FreshBite provides users with an intuitive interface to browse, search, filter, and order their favorite meals with ease and style.
 
-**Live Link:** https://your-live-link-here.com
+**Live Link:** https://freshbite---food-delivery.web.app
 
 ---
 
