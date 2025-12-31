@@ -76,14 +76,6 @@ FreshBite is a comprehensive food ordering platform designed to deliver a seamle
 
 ## 🚀 Installation & Setup Guide
 
-### Prerequisites
-
-Make sure you have the following installed on your machine:
-
-- **Node.js** (v16 or higher)
-- **npm** or **yarn** package manager
-- **Git** for version control
-
 ### Step 1: Clone the Repository
 
 ```bash
@@ -99,7 +91,6 @@ Using npm:
 npm install
 ```
 
-
 Complete install command with all dependencies:
 
 ```bash
@@ -113,7 +104,7 @@ npm install aos@^2.3.4 axios@^1.12.2 react-hot-toast@^2.6.0 react-icons@^5.5.0 r
 npm run dev
 ```
 
-The application will start at `http://localhost:5173` (or another available port)
+The application will start at `http://localhost:5173` 
 
 ### Step 4: Build for Production
 
@@ -128,18 +119,6 @@ The optimized production build will be generated in the `dist` folder.
 ```bash
 npm run preview
 ```
-
----
-
-## 🔧 Available Scripts
-
-In the project directory, you can run:
-
-- `npm run dev` - Start the development server
-- `npm run build` - Create an optimized production build
-- `npm run preview` - Preview the production build locally
-- `npm run lint` - Run linting (if configured)
-
 ---
 
 ## 🎯 Features in Detail
@@ -227,61 +206,3 @@ Restaurant information page including:
 
 - **GitHub Repository:** https://github.com/maimuna03134/My-Fresh-bite.git
 
-
-### Documentation
-
-- **React Documentation:** https://react.dev
-- **Firebase Docs:** https://firebase.google.com/docs
-- **Tailwind CSS:** https://tailwindcss.com
-- **Vite Guide:** https://vitejs.dev/guide/
-- **React Router:** https://reactrouter.com
-- **Axios Documentation:** https://axios-http.com/
-- **SweetAlert2:** https://sweetalert2.github.io/
-- **AOS Library:** https://michalsnik.github.io/aos/
-- **Swiper JS:** https://swiperjs.com/
-- **DaisyUI Components:** https://daisyui.com/
-- **React Icons:** https://react-icons.github.io/react-icons/
-
----
-
-
-## 🙏 Acknowledgments
-
-- All contributors and supporters
-- Firebase for hosting and backend services
-- The React.js and open-source community
-- Libraries and tools that made this project possible:
-  - Tailwind CSS for elegant styling
-  - DaisyUI for beautiful components
-  - SweetAlert2 for user interactions
-  - AOS for smooth animations
-  - React Router for seamless navigation
-
----
-
-## 🚀 Future Enhancements
-
-- Full payment gateway integration (Stripe, PayPal)
-- User authentication and personalized accounts
-- Order history and tracking
-- Wishlists and favorite items
-- Customer reviews and ratings system
-- Admin panel for menu management
-- Email notifications for orders
-- Loyalty rewards program
-- Multi-language support
-- Dark mode theme
-
----
-
-## 📊 Performance
-
-- Optimized bundle size with Vite
-- Lazy loading for images and components
-- Caching strategies for better performance
-- Mobile-first responsive design
-- SEO-friendly structure
-
----
-
-**Enjoy delicious food ordering with FreshBite! 🥙✨**
