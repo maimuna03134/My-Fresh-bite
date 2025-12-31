@@ -1,14 +1,18 @@
 # FreshBite – Food Ordering Website 🥙
 
-A modern, responsive, and interactive food ordering platform built with React.js, Tailwind CSS, and DaisyUI. FreshBite provides users with an intuitive interface to browse, search, filter, and order their favorite meals with ease and style.
-
-**Live Link:** https://freshbite---food-delivery.web.app
-
 ---
 
 ## 📋 Project Overview
 
 FreshBite is a comprehensive food ordering platform designed to deliver a seamless user experience from browsing to checkout. The application features a vibrant interface with smooth animations, interactive components, and playful error handling. Whether you're looking for your favorite dish or exploring new menu items, FreshBite makes food ordering fun and effortless. The platform includes a responsive design optimized for both desktop and mobile devices with persistent cart functionality.
+
+---
+
+**Live Link:** https://freshbite---food-delivery.web.app
+
+<p align="center">
+  <img src="./freshbite.png" width="100%" alt="Banner" />
+</p>
 
 ---
 
